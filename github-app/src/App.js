@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
+import AppContent from './components/AppContent';
 import './App.css';
 
 function App() {
+
+  function handleSearch(e) {
+    const value = e.target.value
+    const keyCode = e.which || e.keyCode
+    const ENTER = 13
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <AppContent handleSearch={handleSearch}/>
     </div>
   );
 }

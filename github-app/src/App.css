@@ -14,9 +14,14 @@
 }
 
 .appContent {
-  float: left;
+  display: flex;
+  flex-direction: column;
   padding: 30px;
   width: 100%;
+}
+
+.reposEStarreds {
+  display: flex;
 }
 
 .search {
@@ -28,4 +33,78 @@
   padding: 10px;
   font-size: 30px;
   border-radius: 8px;
+}
+
+.userInfoStyle {
+  display: flex;
+  align-items: center;
+}
+
+.userInfoStyle img {
+  margin: 0 20px 0 0;
+  max-height: 200px;
+}
+
+.userInfoStyle div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-height: 200px;
+  text-align: start;
+}
+
+.reposInfoStyle li {
+  padding: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: aqua;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.repos {
+  width: 50%;
+  text-align: start;
+}
+
+.starred {
+  width: 50%;
+  margin-left: 5%;
+  text-align: start;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+  align-items: center;
+}
+
+.actions button {
+  font-size: 20px;
+  font-weight: 700;
+  height: 50px;
+  text-transform: uppercase;
+  width: 48%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background-color: aqua;
+}
+
+.repos li,
+.starred li {
+  padding: 10px 0;
 }

@@ -8,7 +8,7 @@ function UserInfo({ userInfo }) {
 
       <div>
         <h3>
-          <a href={`https://github.com/${userInfo.login}`}>
+          <a href={`https://github.com/${userInfo.login}`} target="_blank">
             {userInfo.username}
           </a>
         </h3>
